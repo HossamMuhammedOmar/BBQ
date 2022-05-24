@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #404040;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* =============
+  Typography
+  ============= */
+h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+h2 {
+  font-size: 1.3125rem;
+  margin: 0;
+}
+
+h1 + p {
+  color: #f18119;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+h2 + p {
+  color: #f18119;
+  font-weight: 900;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 0.1em;
+}
+
+.bold-header {
+  font-weight: 900;
+}
+
+.top-text {
+  font-size: 0.625rem;
+  font-weight: 900;
+  color: #f18119;
+  order: -1;
+  text-transform: uppercase;
+  border-top: 8px solid #f18119;
+  margin-top: 0;
+  padding-top: 0.5em;
+  border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
+  letter-spacing: 1px;
+}
+
+.info {
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+}
+
+/* =============
+  Intro Section
+  ============= */
+
+.intro {
+  background-image: url("images/ribs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #404040;
+  background-blend-mode: overlay;
+  padding: 0 0.5em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 50vh;
+}
+
+/* =================
+   main-content section 
+   ================= */
+
+.main-content {
+  padding: 2em 1em;
+}
+
+.intro > *,
+.main-content > * {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* form */
+form {
+  width: 80%;
+  max-width: 300px;
+}
+
+input,
+.register-btn {
+  width: 100%;
+}
+
+input {
+  font-family: inherit;
+  text-align: inherit;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px #404040 solid;
+  margin-bottom: 0.75em;
+  transition: all 250ms;
+}
+
+.register-btn {
+  display: inline-block;
+  padding: 1.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  background: linear-gradient(to left, #ff713b, #ffa51d);
+  text-decoration: none;
+  color: white;
+  font-size: 0.625rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 250ms;
+}
+
+.register-btn:hover,
+.register-btn:focus,
+input:focus {
+  transform: scale(1.1);
+}
+
+/* =================
+   media queries 
+   ================= */
+
+@media (min-width: 520px) {
+  body {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2,
+  h1 + p {
+    font-size: 1.75rem;
+  }
+
+  .flex-column {
+    display: flex;
+  }
+
+  .intro {
+    min-height: 100vh;
+    width: 55%;
+  }
+
+  .main-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
