@@ -32,16 +32,23 @@
           free webinar!
         </p>
         <!-- form -->
-        <form action="#" method="POST">
+        <form id="email-collector" action="#" method="POST">
           <input
+            name="firstName"
             required
             class="first-name"
             type="text"
             placeholder="first name"
           />
-          <input required class="email" type="text" placeholder="email" />
+          <input
+            name="emailAddress"
+            required
+            class="email"
+            type="email"
+            placeholder="email"
+          />
 
-          <a class="register-btn" href="#" type="submit">Register</a>
+          <button class="register-btn" href="#" type="submit">Register</button>
         </form>
         <!-- end form -->
         <p class="info">
@@ -49,5 +56,7 @@
         </p>
       </div>
     </div>
+
+    <script src="app.js"></script>
   </body>
 </html>

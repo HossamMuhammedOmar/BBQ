@@ -109,11 +109,12 @@ input,
 input {
   font-family: inherit;
   text-align: inherit;
-  padding: 1em;
+  padding: 0.4em;
   border-radius: 5px;
   border: 1px #404040 solid;
   margin-bottom: 0.75em;
   transition: all 250ms;
+  font-size: 1.3rem;
 }
 
 .register-btn {
@@ -130,6 +131,7 @@ input {
   margin-bottom: 1em;
   cursor: pointer;
   transform: scale(1);
+  border: 0;
   transition: all 250ms;
 }
 
